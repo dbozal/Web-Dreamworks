@@ -1,0 +1,149 @@
+/* Estilos básicos para la página */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ff9800, #ff5722); /* Fondo naranja degradado */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Título principal de la página */
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    text-shadow: 3px 3px 3px black; /* Sombra de texto */
+    color: #ffeb3b; /* Amarillo brillante */
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para las imágenes a los lados del título */
+.title-image {
+    width: auto; /* Ajusta el tamaño de las imágenes */
+    height: 250px;
+    vertical-align: middle; /* Alineación vertical */
+}
+
+.title-image.left {
+    margin-right: 25px; /* Espacio entre la imagen de la izquierda y el texto */
+}
+
+.title-image.right {
+    margin-left: 25px; /* Espacio entre la imagen de la derecha y el texto */
+}
+
+/* Contenedor de los bloques de información */
+.info-blocks-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espacio entre bloques */
+    max-width: 1000px; /* Limita el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 0 20px;
+}
+
+/* Estilo para cada bloque */
+.info-block {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: left;
+}
+
+/* Estilo para los títulos dentro de los bloques */
+.info-block h2 {
+    color: #ffeb3b; /* Títulos en amarillo brillante */
+    text-shadow: 2px 2px black; /* Sombra para mejorar legibilidad */
+    border-bottom: 2px solid #ffeb3b;
+    margin-bottom: 10px;
+}
+
+/* Estilo de los textos dentro de los bloques */
+.info-block p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.info-block ul {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+/* Contenedor de video */
+.video-block {
+    grid-column: span 2; /* El bloque del tráiler ocupa 2 columnas */
+}
+
+.video-block video {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Estilo para las imágenes dentro de los bloques */
+.info-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Enlaces dentro de los bloques */
+.info-block a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-block a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #1e3c72; /* Azul oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.footer a {
+    color: #fcbf49; /* Amarillo brillante para los enlaces */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .info-blocks-container {
+        grid-template-columns: 1fr 1fr; /* 2 columnas en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Reducir tamaño del título */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-blocks-container {
+        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+    }
+
+    h1 {
+        font-size: 2em; /* Aún más pequeño en pantallas ultra pequeñas */
+    }
+}

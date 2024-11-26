@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css"> 
+</head>
+<body class="form-page">
+
+  <!-- Menú de navegación -->
+  <div class="menu-container">
+    <ul class="menu">
+      <li><a href="../INDEX.html">INDEX</a></li>
+      <li><a href="INFORMACION.html">INFORMACION</a></li>
+      <li>
+        <a href="TOP5PELICULAS.html">TOP 5 PELICULAS</a>
+        <ul class="submenu">
+          <li><a href="PELICULAS/shrek-2.html">SHREK 2</a></li>
+          <li><a href="PELICULAS/madagascar.html">MADAGASCAR</a></li>
+          <li><a href="PELICULAS/spirit.html">SPIRIT</a></li>
+          <li><a href="PELICULAS/simbad.html">SIMBAD</a></li>
+          <li><a href="PELICULAS/gatoconbotas.html">EL GATO CON BOTAS</a></li>
+        </ul>
+      </li>
+      <li><a href="NOTICIAS.html">NOTICIAS</a></li>
+      <li><a href="FORMULARIO.html" class="active">FORMULARIO</a></li>
+    </ul>
+  </div>
+
+    <!-- Contenido principal: Formulario -->
+    <main class="form-container">
+        <h1 class="form-title">Formulario de Contacto</h1>
+        <form action="mailto:dbozal@birt.eus" method="post" enctype="text/plain" class="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required class="input-field">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required class="input-field">
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required class="input-field">
+
+            <label for="tema">Tema:</label>
+            <select id="tema" name="tema" required class="input-field">
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="queja">Queja</option>
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required class="input-field"></textarea>
+
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+    </main>
+
+  <!-- Pie de página -->
+  <div class="footer">
+    <p>&copy; 2024 DreamWorks Web. Todos los derechos reservados. <a href="https://creativecommons.org/licenses/by/4.0/">Política de privacidad</a></p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,396 @@
+/* Estilos básicos para la página */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8; /* Fondo claro neutro */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenedor del menú */
+.menu-container {
+    background-color: #1e3c72; /* Azul oscuro inspirado en el logo de DreamWorks */
+    padding: 10px 0;
+}
+
+/* Menú de navegación */
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #39b54a; /* Verde claro para hover */
+}
+
+/* Estilo para el enlace activo */
+.menu .active {
+    background-color: #fcbf49; /* Amarillo brillante para el enlace activo */
+}
+
+/* Estilo para los enlaces del submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1e3c72;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 10px;
+}
+
+.submenu a {
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.submenu a:hover {
+    background-color: #39b54a;
+}
+
+/* Contenedor principal de contenido */
+.content {
+    text-align: center;
+    padding: 50px 20px;
+    flex: 1;
+    background-color: #eaf4f1; /* Fondo claro y suave */
+}
+
+/* Estilos específicos para la página INICIO (filas) */
+body:not(.informacion-page) .section-container {
+    display: flex;
+    flex-direction: row; /* Organización en filas */
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para las secciones de contenido en INICIO */
+body:not(.informacion-page) .section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 350px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el enlace de la reflexión */
+.reflexion {
+    text-align: center;
+    font-size: larger;
+}
+
+/* Estilos específicos para la página INFORMACION (columnas) */
+.informacion-page .section-container {
+    display: flex;
+    flex-direction: column; /* Organización en columnas */
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para las secciones de contenido en la página INFORMACION */
+.informacion-page .section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 15px;
+    width: 80%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-imagen {
+    width: 965px; /* Imagen más pequeña */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    margin: 20px auto 40px; /* Margen superior e inferior más amplio */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+
+/* Títulos de las secciones */
+.section h2 {
+    color: #1e3c72; /* Azul oscuro para los títulos */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la imagen del autor */
+.author-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 10px 0;
+    object-fit: cover;
+    border: 3px solid #fcbf49; /* Borde amarillo alrededor de la imagen */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centra la imagen */
+}
+
+/* Justificar texto de la lista en el apartado PELÍCULAS */
+.justified-list {
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Estilo para las listas */
+ul {
+    padding-left: 20px;
+}
+
+/* Estilo de los enlaces */
+a {
+    text-decoration: none;
+    color: #1e3c72;
+}
+
+a:hover {
+    color: #fcbf49;
+}
+
+/* Estilo para los logotipos de redes sociales */
+.social-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #1e3c72; /* Azul oscuro para el pie de página */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #fcbf49;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos específicos para la página TOP 5 PELÍCULAS */
+.top5peliculas-page .movies-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.top5peliculas-page .movies-row .movie {
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.top5peliculas-page .movies-row .movie:hover {
+    transform: scale(1.1); /* Ampliar columna */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra adicional */
+}
+
+/* Imagenes recortadas y del mismo tamaño */
+.top5peliculas-page .movie img {
+    width: 100%; /* Ajusta al contenedor */
+    height: 300px; /* Tamaño uniforme */
+    object-fit: cover; /* Recorta y centra la imagen */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.top5peliculas-page .movie h2 {
+    font-size: 18px;
+    color: #1e3c72;
+    margin: 10px 0;
+}
+
+.top5peliculas-page .movie p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Estilo para la tabla de noticias */
+.news-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #eaf4f1; /* Fondo claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.news-table tr {
+    border-bottom: 1px solid #ccc; /* Separador entre noticias */
+}
+
+.news-table td {
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f6f8; /* Fondo alterno */
+}
+
+.news-table td strong {
+    font-size: 18px;
+    color: #1e3c72; /* Azul para los títulos */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.news-table td p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.news-table a {
+    color: #39b54a; /* Verde para el enlace */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-table a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para las imágenes dentro de la tabla */
+.news-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    float: left;
+}
+
+/* Estilos específicos para la página FORMULARIO */
+
+/* Mantener estilos de cuerpo general */
+body.form-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Título de la página (formulario) */
+  .form-page h1 {
+    text-align: center;
+    color: #444;
+    margin-top: 20px;
+  }
+  
+  /* Estilo del formulario */
+  .form-page form {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo de las etiquetas del formulario */
+  .form-page form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  /* Estilo de los campos de texto, correo, etc. */
+  .form-page form input[type="text"],
+  .form-page form input[type="email"],
+  .form-page form select,
+  .form-page form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo de los campos de texto con altura mayor */
+  .form-page form textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  /* Estilo del botón de envío */
+  .form-page form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Efecto hover en el botón */
+  .form-page form button:hover {
+    background-color: #45a049;
+  }
+
+  .form-container {
+    padding: 20px;
+    margin-bottom: 50px; /* Añade espacio entre el formulario y el pie de página */
+  }
